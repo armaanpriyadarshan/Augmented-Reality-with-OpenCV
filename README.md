@@ -39,4 +39,10 @@ pip install opencv-contrib-python
 **Note: For this project, I you must use versions 4.3.0+.**
 ## Drawing ArUco Markers (Optional)
 
+ArUco Markers, standing for Augmented Reality University of Cordoba, are fiducial markers as mentioned earlier, a key step in the process. In the real world, markers can be placed and captured through photo, video, etc. In this project, the corner markers are identified and the encapsulated frame is replaced with a video. 
+
+OpenCV has multiple dictionaries of AruCo Markers built it. I have attached all the markers I used separately, as well as in the printable sheet of paper used. However, if you want, I've also included a [program for drawing new AruCo markers](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV/blob/main/draw_marker.py). There are a few changes you must make to the script to generate new markers
+
+* **Line 7**:
+
 ## Augmenting Reality
