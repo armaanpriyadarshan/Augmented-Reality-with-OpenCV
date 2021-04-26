@@ -5,13 +5,13 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--image', help='Path to the image to be projected',
+parser.add_argument('--video', help='Path to the video to be projected',
                     default='Ronaldo.mp4')            
 args = parser.parse_args()
 
-image_path=args.image
+video_path=args.video
 videostream = cv2.VideoCapture(1)   
-video = cv2.VideoCapture(image_path)
+video = cv2.VideoCapture(video_path)
 dictionary = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_250)
 parameters =  cv2.aruco.DetectorParameters_create()
 
