@@ -18,6 +18,25 @@ This repository contains everything you need to augment webcam footage using Ope
 
 ## Organizing our Prequisites and Virtual Environment
 
+Like many of my other projects, this one also uses a virtual environment to avoid version conflicts with previously installed packages on our system. To do so, [Anaconda](https://www.anaconda.com/products/individual) is, again, my choice. In an Anaconda terminal, run
+
+```
+conda create -n opencvar pip python=3.8
+```
+
+and then
+
+```
+conda activate opencvar
+```
+
+Now that we have created and activated our virtual environment, we can install OpenCV_contrib with
+
+```
+pip install opencv-contrib-python
+```
+
+**Note: For this project, I you must use versions 4.3.0+.**
 ## Drawing ArUco Markers (Optional)
 
 ## Augmenting Reality
