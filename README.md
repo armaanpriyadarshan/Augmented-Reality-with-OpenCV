@@ -43,6 +43,17 @@ ArUco Markers, standing for Augmented Reality University of Cordoba, are fiducia
 
 OpenCV has multiple dictionaries of AruCo Markers built it. I have attached all the markers I used separately, as well as in the printable sheet of paper used. However, if you want, I've also included a [program for drawing new AruCo markers](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV/blob/main/draw_marker.py). There are a few changes you must make to the script to generate new markers
 
-* **Line 7**:
+* **Line 7**: Edit the highlighted value to the ID of the ArUco marker you wish to print. 
+<p align="left">
+  <img src="doc/github.png">
+</p>
+
+* **Line 9**: I'd recommend changing the name of the output file depending on the ID for convencience and identification when you need it. For example, "arucomarker4.png" for ID 4, "arucomarker5.png" for ID 6, etc.
+
+If you plan on using these markers for the AR program, there are a few more changes you need to make
+
+* **Line 91**: Change cornerIds=(1, 2, 4, 3) to the IDs of the ArUco markers you are using. Order should go (Top Left Marker, Top Right Marker, Bottom Right Marker, Bottom Left Marker).
+
+Once this is finished, we're ready for the demonstration. 
 
 ## Augmenting Reality
