@@ -9,7 +9,7 @@ This repository contains everything you need to augment webcam footage using Ope
 
 ### The tutorial/demonstration video associated with this repository can be found below with an important step [here](https://www.youtube.com/channel/UCT9t2Bug62RDUfSBcPt0Bzg?sub_confirmation=1)!
 
-[![Link to my vid](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV/blob/main/doc/thumbnail.png)]()
+[![Link to my vid](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV/blob/main/doc/thumbnail.png)](https://www.youtube.com/watch?v=K7cbdVgnCPI)
 
 ## Table of Contents
 1. [Organizing our Prequisites and Virtual Environment](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV#organizing-our-prequisites-and-virtual-environment)
