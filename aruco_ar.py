@@ -25,18 +25,12 @@ def find_and_warp(frame, source, cornerIds, dictionary, parameters):
         markerIds.flatten()
     refPts = []
     for i in cornerIds:
-        # grab the index of the corner with the current ID
         j = np.squeeze(np.where(markerIds == i))
-        
-        # if we receive an empty list instead of an integer index,
-        # then we could not find the marker with the current ID
         if j.size == 0:
             continue
         else:
             j = j[0]   
-        # otherwise, append the corner (x, y)-coordinates to our list
-        # of reference points
-        
+
         markerCorners = np.array(markerCorners)
         #print(markerCorners)
         corner = np.squeeze(markerCorners[j])
@@ -46,11 +40,7 @@ def find_and_warp(frame, source, cornerIds, dictionary, parameters):
     (refPtTL, refPtTR, refPtBR, refPtBL) = np.array(refPts)
     dstMat = [refPtTL[0], refPtTR[1], refPtBR[2], refPtBL[3]]
     dstMat = np.array(dstMat)
-    # define the transform matrix for the *source* image in top-left,
-    # top-right, bottom-right, and bottom-left order
     srcMat = np.array([[0, 0], [srcW, 0], [srcW, srcH], [0, srcH]])
-    # compute the homography matrix and then warp the source image to
-    # the destination based on the homography
     (H, _) = cv2.findHomography(srcMat, dstMat)
     warped = cv2.warpPerspective(source, H, (imgW, imgH))
     mask = np.zeros((imgH, imgW), dtype="uint8")
@@ -68,8 +58,6 @@ def find_and_warp(frame, source, cornerIds, dictionary, parameters):
 
 while True:
 
-    # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
-    # i.e. a single-column array, where each item in the column has the pixel RGB value
     ret, frame = videostream.read()
     ret, source = video.read()
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
@@ -85,7 +73,6 @@ while True:
     source = cv2.resize(source, dim, interpolation = cv2.INTER_AREA)
     
     
-    # verify *at least* one ArUco marker was detected
     warped = find_and_warp(
         frame, source,
         cornerIds=(1, 2, 4, 3),
@@ -93,8 +80,6 @@ while True:
         parameters=parameters,
         )
     if warped is not None:
-        # set the frame to the output augment reality frame and then
-        # grab the next video file frame from our queue
         frame = warped
     cv2.imshow('Augmented Reality', frame)
     if cv2.waitKey(1) == ord('q'):
