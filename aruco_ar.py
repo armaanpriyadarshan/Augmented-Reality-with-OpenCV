@@ -10,7 +10,7 @@ parser.add_argument('--video', help='Path to the video to be projected',
 args = parser.parse_args()
 
 video_path=args.video
-videostream = cv2.VideoCapture(1)   
+videostream = cv2.VideoCapture(0)   
 video = cv2.VideoCapture(video_path)
 dictionary = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_250)
 parameters =  cv2.aruco.DetectorParameters_create()
