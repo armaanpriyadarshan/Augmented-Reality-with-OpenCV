@@ -56,4 +56,20 @@ If you plan on using these markers for the AR program, there are a few more chan
 
 ## Augmenting Reality
 
-This step is as simple as running one program. The usage as such
+This step is as simple as running one program. The usage goes as such
+
+```
+usage: aruco_ar.py [-h] [--video VIDEO]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --video VIDEO  Path to the video to be projected
+```
+
+Just run
+
+```
+python aruco_ar.py --video PATH_TO_VIDEO
+```
+
+If everything goes to plan, you should see a webcam window open up to which you can hold up the sheet of paper with the markers on it. That means our work is done. If you find something cool, feel free to share it, as others can also learn! And if you have any errors, just raise an issue and I'll be happy to take a look at it. Great work, and until next time, bye!
