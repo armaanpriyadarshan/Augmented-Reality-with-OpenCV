@@ -55,3 +55,5 @@ If you plan on using these markers for the AR program, there are a few more chan
 * **Line 91**: Change cornerIds=(1, 2, 4, 3) to the IDs of the ArUco markers you are using. Order should go (Top Left Marker, Top Right Marker, Bottom Right Marker, Bottom Left Marker).
 
 ## Augmenting Reality
+
+This step is as simple as running one program. The usage as such
