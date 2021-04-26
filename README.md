@@ -12,12 +12,12 @@ This repository contains everything you need to augment webcam footage using Ope
 [![Link to my vid](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV/blob/main/doc/thumbnail.png)]()
 
 ## Table of Contents
-1. [Drawing ArUco Markers (Optional)]()
-2. [Organizing our Prequisites and Virtual Environment]()
-3. [Augmenting Reality]()
-
-## Drawing ArUco Markers (Optional)
+1. [Organizing our Prequisites and Virtual Environment](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV#organizing-our-prequisites-and-virtual-environment)
+2. [Drawing ArUco Markers (Optional)](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV#drawing-aruco-markers-optional)
+3. [Augmenting Reality](https://github.com/armaanpriyadarshan/Augmented-Reality-with-OpenCV#augmenting-reality)
 
 ## Organizing our Prequisites and Virtual Environment
+
+## Drawing ArUco Markers (Optional)
 
 ## Augmenting Reality
