@@ -15,3 +15,9 @@ This repository contains everything you need to augment webcam footage using Ope
 1. [Drawing ArUco Markers (Optional)]()
 2. [Organizing our Prequisites and Virtual Environment]()
 3. [Augmenting Reality]()
+
+## Drawing ArUco Markers (Optional)
+
+## Organizing our Prequisites and Virtual Environment
+
+## Augmenting Reality
